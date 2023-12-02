@@ -1,8 +1,8 @@
-
 // DE-MODULARIZE TO VIEW
 
-const dropdowns = () => {
-    const dropdownLists = document.querySelectorAll(".dropdown-list")
+const dropdowns = () => { //<--
+    
+    const dropdownLists = document.querySelectorAll(".dropdown-list") 
 
     dropdownLists.forEach((dropdown) => {
 
@@ -27,9 +27,9 @@ const dropdowns = () => {
         })
 
     });
-};
 
-export default dropdowns;
+}; //
+
+export default dropdowns; //
 
 // DE-MODULARIZE TO VIEW
-
