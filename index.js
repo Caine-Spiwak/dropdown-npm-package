@@ -1,6 +1,7 @@
 
+// DE-MODULARIZE TO VIEW
 
-const dropdowns = () => {
+// const dropdowns = () => {
     const dropdownLists = document.querySelectorAll(".dropdown-list")
 
     dropdownLists.forEach((dropdown) => {
@@ -18,14 +19,17 @@ const dropdowns = () => {
 
         // EVENT LISTENER FOR DROPDOWN LISTS
         dropdown.addEventListener('mouseover', () => {
-            dropdown.classList.toggle("toggle-dropdown");
+            dropdown.previousSibling.classList.toggle("toggle-dropdown");
         })
 
         dropdown.addEventListener('mouseout', () => {
-            dropdown.classList.toggle("toggle-dropdown");
+            dropdown.previousSibling.classList.toggle("toggle-dropdown");
         })
 
     });
-};
+// };
 
-export default dropdowns;
+// export default dropdowns;
+
+// DE-MODULARIZE TO VIEW
+
